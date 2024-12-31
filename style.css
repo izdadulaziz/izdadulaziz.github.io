@@ -1,12 +1,36 @@
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #000428, #004e92);
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
 
-body{
-  margin: p;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: black;
-  color: white;
-  font-family: Arial, Sans-Serif;
-  font-size: 2rem;
-}
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    animation: glow 1.5s infinite alternate;
+  }
+
+ @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #ff5733, 0 0 20px #ff5733, 0 0 30px #ff5733;
+    }
+    to {
+      text-shadow: 0 0 20px #ffc300, 0 0 30px #ffc300, 0 0 40px #ffc300;
+    }
+ }
+
+ .fireworks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+ }
