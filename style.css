@@ -1,14 +1,72 @@
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #000;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  background-color: #000; /* Background hitam */
+  color: #fff; /* Teks putih */
   text-align: center;
+  padding: 20px;
 }
 h1 {
   font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none; /* Hilangkan bullet points */
+  padding: 0;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+li {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #333; /* Warna latar item */
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  
+}
+
+li:hover {
+  transform: scale(1.05); /* Membesar sedikit saat hover */
+  background-color: #555; /* Warna latar lebih terang saat hover */
+}
+
+img {
+  width: 24px;
+  height: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: #1E90FF; /* Biru */
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #87CEEB; /* Biru lebih terang saat hover */
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  li {
+    font-size: 16px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
 }
