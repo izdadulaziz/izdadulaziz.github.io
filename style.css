@@ -1,21 +1,101 @@
-
+/* === Global Styles === */
 body {
-    background-color: black; 
-    color: white;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh; 
-    margin: 0;
+  background-color: black; 
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh; 
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
-
+/* === Judul (Typing Effect) === */
 h1 {
-    font-family: Arial, sans-serif;
-    font-size: 40px;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid white; 
-    display: inline-block;
-    padding-right: 5px;
+  font-size: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid white; 
+  display: inline-block;
+  padding-right: 5px;
+  text-align: center;
+  margin-bottom: 30px;
 }
+
+/* === List Sosial Media === */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* === Item List === */
+li {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect */
+li:hover {
+  transform: scale(1.05);
+  background-color: #333;
+}
+
+/* Gambar Ikon */
+img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Teks Link */
+a {
+  text-decoration: none;
+  color: #1E90FF;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Hover Link */
+a:hover {
+  color: #87CEEB;
+}
+
+/* === Responsif untuk layar kecil === */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  li {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+
+  img {
+    width: 45px;
+    height: 45px;
+  }
+
+  a {
+    font-size: 16px;
+  }
+}
+
+/*
+    
+    Thank you ChatGPT
+
+*/
